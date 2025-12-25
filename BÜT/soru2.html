@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soru 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/genel.css" />
+    <script src="js/libs/jquery/jquery.js"></script>
+    <script>
+        /* Kodlarınız bu satırın altına yazabilirsiniz.*/
+        function farkli(){
+            var sayi = parseInt(Math.random()*40)+1;
+            document.getElementById("sonuc1").innerHTML =sayi;
+            var sayi = parseInt(Math.random()*80-41)+41;
+            document.getElementById("sonuc2").innerHTML =sayi;
+            var sayi = parseInt(Math.random()*120-81)+81;
+            document.getElementById("sonuc3").innerHTML =sayi;
+
+        }
+
+    </script>
+</head>
+<body>
+<h2>Soru 2</h2>
+<div class="aciklama">Rasgele Sayı düğmesine basıldığında 1 ile 40 arasında rasgele bir tam sayı üretilerek sonuc1 id'li div'in içine, 41 ile 80 arasında rasgele bir tam sayı üretilerek sonuc2 id'li div'in içine, 81 ile 120 arasında rasgele bir tam sayı üretilerek sonuc3 id'li div'in içine yazılmalıdır.
+    İpucu: Math.random() ile 0-1 arasında rasgele ondalıklı bir sayı üretilmektedir.
+</div>
+<div class="islem">
+    <br />
+    <button id="rasgele" onclick="farkli();">Rasgele Sayı</button>
+    <br />
+    <br />
+    Sonuc : <div id='sonuc1' class='sonuc' style="width: 80px; margin-right: 5px;"></div>
+    <div id='sonuc2' class='sonuc' style="width: 80px; margin-right: 5px;"></div>
+    <div id='sonuc3' class='sonuc' style="width: 80px; "></div>
+</div>
+
+</body>
+</html>

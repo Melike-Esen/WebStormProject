@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+
+#baslik{
+    padding: 15px;
+    margin-top: 0;
+    background-color: darkslateblue;
+    color: bisque;
+    font-size: 25px;
+    text-align: center;
+}
+.menu{
+    overflow: hidden;
+    position: relative;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    font-size: 15px;
+
+}
+.menu ul li {
+    display: block;
+    float: left;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.menu li a{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+/* Change the link color on hover */
+.menu li a:hover {
+    background-color:black;
+    color: darkslateblue;
+}
+
+.menu.tikla ul li{
+    width:100%;
+}
+.menu.tikla ul > :not(li:first-child){
+    display: block;
+}
+.menu.tikla ul li:last-child a{
+    display: block;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+
+
+.satir{
+    overflow: hidden;
+}
+
+
+#sol{
+    background-color: mistyrose;
+    padding: 10px;
+    width: 100%;
+    float: left;
+
+
+}
+#orta{
+    padding: 10px;
+    width: 100%;
+    float: left;
+
+}
+#sag{
+    background-color: mistyrose;
+    padding: 10px;
+    width: 100%;
+    float: left;
+
+}
+#alt{
+    font-size: 15pt;
+    background-color: darkslateblue;
+    color:beige;
+    text-align: center;
+}
+.menu ul > :not(li:first-child){
+    display: none;
+}
+.menu ul > li:last-child{
+    display: inherit;
+    float: right;
+}
+@media screen and (min-width: 768px){
+    #sol{
+        width: 25%;
+    }
+    #orta{
+        width: 50%;
+
+    }
+    #sag{
+        width: 25%;
+
+    }
+
+    .menu ul > :not(li:first-child){
+        display: block;
+    }
+    .menu ul > li:last-child{
+        display: none;
+    }
+}

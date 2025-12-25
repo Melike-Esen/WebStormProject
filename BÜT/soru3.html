@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soru 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/genel.css" />
+    <script src="js/libs/jquery/jquery.js"></script>
+    <script>
+        /* Kodlarınız bu satırın altına yazabilirsiniz.*/
+        function fontdegistir(font){
+            document.getElementById("yazi").style.fontSize=font;
+
+        }
+
+
+    </script>
+</head>
+<body>
+<h2>Soru 3</h2>
+<div class="aciklama">
+    Küçük isimli düğmeye basıldığında "Yönetim Bilişim Sistemleri" yazısı 14pt, Normal isimli düğmeye basıldığında 20pt ve Büyük isimli düğmeye basıldığında ise 30pt büyüklüğüde olmalıdır. Bunun için ilgili elemanın css özelliklerinden font-size özelliğine uygun değer atanmalıdır. Not: javascript ile  ilgili elemanın style.fontSize özelliği değiştirilmelidir.
+    <br />
+</div>
+<div class="islem">
+    <button  onclick="fontdegistir('14pt');" id="k">Küçük</button>
+    <button  onclick="fontdegistir('20pt');" id="m">Normal</button>
+    <button  onclick="fontdegistir('30pt');" id="y">Büyük</button>
+    <br />
+    <br />
+    <br />
+    <p id="yazi" style="font-size: 20pt;">Yönetim Bilişim Sistemleri</p>
+</div>
+
+</body>
+</html>

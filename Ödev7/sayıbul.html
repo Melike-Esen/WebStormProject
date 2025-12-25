@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var rastsayı=parseInt(Math.random()*1000+1);
+        console.log(rastsayı);
+        var denemesay=0;
+        function kontrolet() {
+            var sayiString = document.getElementById("sayi").value;
+            var sayi = parseInt(sayiString);
+            if (isNaN(sayi)){
+                alert("Lütfen sayı giriniz.")
+                return;
+            }
+            denemesay++;
+            if (sayi<rastsayı){
+                alert("Daha büyük bir sayı giriniz.")
+
+            }else if (sayi>rastsayı){
+                alert("Daha küçük bir sayı giriniz.")
+            }else{
+                document.getElementById("sonuc").innerHTML = denemesay+"denemede sonucu bildiniz,Tebrikler!";
+                document.getElementById("btnTekrar").style.display="inline-block";
+                document.getElementById("btnKontrol").style.disabled = true;
+            }
+
+        }
+        function Tekrar(){
+            rastsayı = parseInt(Math.random()*1000+1);
+            console.log(rastsayı);
+            denemesay=0;
+            document.getElementById("btnTekrar").style.display="none";
+            document.getElementById("btnKontrol").style.disabled = false;
+
+
+        }
+    </script>
+</head>
+<body onload="">
+<h1 > Sayı Tahmin Oyunu</h1>
+<p > 1 ile 1000 arasında bir sayı tutulmuştur.Lütfen bu sayıyı tahmin ediniz.</p>
+<label >Sayı Giriniz:</label>
+<input type="tel" id="sayi">
+<br />
+<div style="margin-top: 15px;">
+<button id="btnKontrol" onclick="kontrolet();">Kontrol Et</button>
+<button id="btnTekrar" onclick="Tekrar();" style="display: none;">Tekrar</button>
+</div>
+<div id="sonuc">
+
+</div>
+</body>
+</html>

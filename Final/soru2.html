@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soru 2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/genel.css" />
+  <script src="js/libs/jquery/jquery.js"></script>
+  <script>
+    /* Kodlarınız bu satırın altına yazabilirsiniz.*/
+    function  farklı(){
+      var sayi = parseInt(Math.random()*100)+1;
+      document.getElementById("sonuc").innerHTML =sayi;
+    }
+
+  </script>
+</head>
+<body>
+<h2>Soru 2</h2>
+<div class="aciklama">Rasgele Sayı düğmesine basıldığında 1 ile 100 arasında rasgele bir tam sayı üretilere sonuc id'li div'in içine yazılmalıdır.
+  İpucu: Math.random() ile 0-1 arasında rasgele ondalıklı bir sayı üretilmektedir.
+</div>
+<div class="islem">
+  <br />
+  <button onclick="farklı();"> Rasgele Sayı</button>
+  <br />
+  <br />
+  Sonuc: <div id='sonuc' class='sonuc'> </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soru 5</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/genel.css" />
+  <script src="js/libs/jquery/jquery.js"></script>
+  <script>
+    /* Kodlarınız bu satırın altına yazabilirsiniz.*/
+    function hesapla(){
+      var v=Number(document.getElementById("vize").value);
+      var f=Number(document.getElementById("final").value);
+      var not = parseInt(v)*0.4 + parseInt(f)*0.6;
+      var harf ="";
+      if (not>=90){
+          harf ="AA"
+      }else if (not >=85){
+          harf="BA"
+      }else if (not >=80){
+      harf="BB"
+      }else if (not >=70) {
+        harf = "CB"
+      }else if (not >=60) {
+        harf = "CC"
+      }else if (not >=55) {
+        harf = "DC"
+      }else if (not >=45) {
+        harf = "DD"
+      }else {
+        harf = "FF"
+      }
+
+      document.getElementById("sonuc").innerHTML= not+" "+harf;
+  }
+  </script>
+</head>
+<body>
+<h2>Soru 5</h2>
+<div class="aciklama">Aşağıda 100'lük sistemdeki notların harf karşılıkları verilmiştir.
+  Başarı Puanını ve Harf Notunu Hesapla butonuna tıklandığında
+  vizenin %40'ı ve finalin %60'ını alarak başarı puanını hesaplamalı ve bu başarı puanına göre
+  öğrencinin hangi harf notunu aldığını hesaplayarak sonuc id'li div'in içine harf notunu yazdırmalıdır.
+
+  <table border=1 cellspacing=0>
+    <tr>
+      <td>90-100</td><td>AA</td>
+    </tr>
+    <tr>
+      <td>85-89</td><td>BA</td>
+    </tr>
+    <tr>
+      <td>80-84</td><td>BB</td>
+    </tr>
+    <tr>
+      <td>70-79</td><td>CB</td>
+    </tr>
+    <tr>
+      <td>60-69</td><td>CC</td>
+    </tr>
+    <tr>
+      <td>55-59</td><td>DC</td>
+    </tr>
+    <tr>
+      <td>45-54</td><td>DD</td>
+    </tr>
+    <tr>
+      <td>0-45</td><td>FF</td>
+    </tr>
+  </table>
+
+</div>
+<div class="islem">
+  Vize: <input type='text' size='5' id='vize' />
+  <br />
+  Final: <input type='text' size='5' id='final' />
+  <br />
+  <br />
+  <button onclick="hesapla();">Başarı Puanını ve Harf Notunu Hesapla</button>
+  <br />
+  <br />
+  Sonuc: <div id='sonuc' class='sonuc'> </div>
+</div>
+
+</body>
+</html>

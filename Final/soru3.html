@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soru 3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/genel.css" />
+  <script src="js/libs/jquery/jquery.js"></script>
+  <script>
+    function renkDegistir(renk){
+      document.getElementById("yazi").style.color=renk;
+
+    }
+
+  </script>
+</head>
+<body>
+<h2>Soru 3</h2>
+<div class="aciklama">
+  Kırmızı isimli düğmeye basıldığında "Yönetim Bilişim Sistemleri" yazısı kırmızı, Mavi isimli düğmeye basıldığında mavi ve Yeşim isimli düğmeye basıldığında ise yeşil olmalıdır. Bunun için ilgili elemanın css özelliklerinden color özelliğine uygun değer atanmalıdır.
+  <br />
+</div>
+<div class="islem">
+  <button onclick="renkDegistir('red')">Kırmızı</button>
+  <button onclick="renkDegistir('blue')">Mavi</button>
+  <button onclick="renkDegistir('green')">Yeşil</button>
+  <br />
+  <br />
+  <br />
+  <p id="yazi" style="font-size: 20pt; color:red;">Yönetim Bilişim Sistemleri</p>
+</div>
+
+</body>
+</html>

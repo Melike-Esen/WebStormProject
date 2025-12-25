@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soru 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/genel.css" />
+    <script src="js/libs/jquery/jquery.js"></script>
+    <script>
+        /* Kodlarınız bu satırın altına yazabilirsiniz.*/
+        function Hipotenüs(){
+            var k1=Number(document.getElementById("kenar1").value);
+            var k2=Number(document.getElementById("kenar2").value);
+            var yhipotenüs = Math.sqrt((k1*k1)+(k2*k2));
+            document.getElementById("sonuc").innerHTML= yhipotenüs;
+        }
+
+
+    </script>
+</head>
+<body>
+<h2>Soru 1</h2>
+<div class="aciklama">Aşağıda verilen butona basıldığında dik kenar uzunlukları kullanıcı tarafından
+    girilen dik üçgenin hipotenüs uzunluğu hesaplanmalı ve sonuc id'li div'in
+    içine yazılmalıdır. Hipotenüs, dik kenarların kareleri toplamının kareköküdür.
+    Örneğin dik kenarları 3 ve 4 olan bir dik üçgenin hipotenüs'ü &radic;<span style="text-decoration: overline">9+16</span>=5 olarak hesaplanır.
+    Karekök almak için Math.sqrt() fonksiyonunu kullanabilirsiniz.
+</div>
+<div class="islem">
+    Dik Kenar 1: <input type='text' size='5' id='kenar1' />
+    <br />
+    Dik Kenar 2: <input type='text' size='5' id='kenar2' />
+    <br />
+    <br />
+    <button onclick="Hipotenüs();">Hipotenüs'ü hesapla</button>
+    <br />
+    <br />
+    Sonuc: <div id='sonuc' class='sonuc'> </div>
+</div>
+
+</body>
+</html>

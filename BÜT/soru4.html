@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soru 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/genel.css" />
+    <script src="js/libs/jquery/jquery.js"></script>
+    <script>
+        /* Kodlarınız bu satırın altına yazabilirsiniz.*/
+        function eşleştir() {
+            var k1 = Number(document.getElementById("kenar1").value);
+            var k2 = Number(document.getElementById("kenar2").value);
+            var k3 = Number(document.getElementById("kenar3").value);
+            var yazi ="";
+            if ( k1 = k2 ,k2=k3  ) {
+                yazi = "Eşkanar üçgen"
+            }else if (){
+                yazi = ""
+
+            }
+
+
+
+            document.getElementById("sonuc").innerHTML=" "+yazi;
+        }
+
+
+
+    </script>
+</head>
+<body>
+<h2>Soru 4</h2>
+<div class="aciklama">Aşağıda verilen butona basıldığında üç kenarı kullanıcı tarafından girilen üçgenin çeşidi (çeşit kenar üçgen, ikiz kenar üçgen veya eş kenar üçgen) belirlenmeli  ve sonuc id'li div'in içine yazılmalıdır. </div>
+<div class="islem">
+    Kenar 1: <input type='text' size='5' id='k1' />
+    <br />
+    Kenar 2: <input type='text' size='5' id='k2' />
+    <br />
+    Kenar 3: <input type='text' size='5' id='k3' />
+    <br />
+    <br />
+    <button onclick="eşleştir();" id="aci">Üçgenin Çeşidi Nedir?</button>
+
+    <br />
+    <br />
+    Sonuc: <div id='sonuc' class='sonuc'> </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+#Ana {
+    margin: auto;
+    width: 960px;
+    border-collapse: collapse;
+}
+table,td{
+    border: 1px solid black;
+}
+.alt{
+    text-align: center;
+    font-size: 10px;
+    background-color:burlywood;
+}
+nav{
+    display: inline-block;
+    padding: 5px;
+    margin: 0px;
+}
+nav a:link, nav a:visited{
+    text-decoration:none;
+    background-color: white;
+    color: white;
+}
+nav a:hover{
+    text-decoration:none;
+    background-color: buttontext;
+    color: activecaption;
+}

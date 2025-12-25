@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+#sayfa {
+    margin: auto;
+    width: 960px;
+    background-color: bisque;
+}
+header{
+    height: 50px;
+    background-color: black;
+    padding-top:0px;
+}
+header h1{
+    text-align: center;
+}
+nav a{
+    display: inline-block;
+    padding: 5px;
+    margin: 0px;
+}
+nav a:link, nav a:visited{
+    text-decoration:none;
+    background-color: white;
+    color: white;
+}
+nav a:hover{
+    text-decoration:none;
+    background-color: buttontext;
+    color: activecaption;
+}
+#içerik{
+    width: 80%;
+    float: left;
+}
+aside{
+    width: 20% ;
+    float: left;
+}
+footer{
+    clear: both;
+    background-color: black;
+    text-align: center;
+    color: white;
+}

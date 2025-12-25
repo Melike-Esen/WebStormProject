@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soru 4</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/genel.css" />
+  <script src="js/libs/jquery/jquery.js"></script>
+  <script>
+    /* Kodlarınız bu satırın altına yazabilirsiniz.*/
+    /*$(document).ready(function (){
+      $("#aci").click(function (){
+        var s1 = $(#sayi1).val();
+        var s2 = $(#sayi1).val();
+        var toplam = 180 - parseInt(s1) - parseInt(s2);
+        $("#sonuc").html(toplam);
+      });
+    }); */
+    function aci ()  {
+      var s1=Number(document.getElementById("sayi1").value);
+      var s2=Number(document.getElementById("sayi2").value);
+      var ucgen = 180 - parseInt(s1) - parseInt(s2)
+      document.getElementById("sonuc").innerHTML = ucgen;
+
+
+    }
+
+  </script>
+</head>
+<body>
+<h2>Soru 4</h2>
+<div class="aciklama">Aşağıda verilen butona basıldığında iki iç açısı kullanıcı tarafından girilen üçgenin 3. iç açısı hesaplanmalı ve sonuc id'li div'in içine yazılmalıdır. Üçgende iç açılar toplamı 180'dir.</div>
+<div class="islem">
+  Açı 1: <input type='text' size='5' id='sayi1' />
+  <br />
+  Açı 2: <input type='text' size='5' id='sayi2' />
+  <br />
+  <br />
+  <button onclick="aci();">Açıyı Hesapla</button>
+
+  <br />
+  <br />
+  Sonuc: <div id='sonuc' class='sonuc'> </div>
+</div>
+
+</body>
+</html>

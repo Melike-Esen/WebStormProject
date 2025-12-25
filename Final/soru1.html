@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soru 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/genel.css" />
+    <script src="js/libs/jquery/jquery.js"></script>
+    <script>
+
+        function Toplama(){
+            var s1=Number(document.getElementById("sayi1").value);
+            var s2=Number(document.getElementById("sayi2").value);
+            var toplam = parseInt(s1) + parseInt(s2);
+            document.getElementById("sonuc").innerHTML= toplam;
+        }
+        function Çıkarma(){
+            var s1=Number(document.getElementById("sayi1").value);
+            var s2=Number(document.getElementById("sayi2").value);
+            var çıkarma = parseInt(s1) - parseInt(s2);
+            document.getElementById("sonuc").innerHTML= çıkarma;
+        }
+        function Çarpma(){
+            var s1=Number(document.getElementById("sayi1").value);
+            var s2=Number(document.getElementById("sayi2").value);
+            var çarpma = parseInt(s1) * parseInt(s2);
+            document.getElementById("sonuc").innerHTML= çarpma;
+        }
+        function Bölme(){
+            var s1=Number(document.getElementById("sayi1").value);
+            var s2=Number(document.getElementById("sayi2").value);
+            var bölme = parseInt(s1) / parseInt(s2);
+            document.getElementById("sonuc").innerHTML= bölme;
+        }
+
+
+
+    </script>
+</head>
+<body>
+<h2>Soru 1</h2>
+<div class="aciklama">Aşağıda verilen düğmelere basıldığında Toplama, Çıkarma, Çarpma ve Bölme işlemleri gerçekleştirilecek sonuc id'li div'in içine yazılacaktır.</div>
+<div class="islem">
+    Sayı 1: <input type='text' size='5' id='sayi1' />
+    <br />
+    Sayı 2: <input type='text' size='5' id='sayi2' />
+    <br />
+    <br />
+    <button onclick="Toplama();">Topla</button>
+    <button  onclick="Çıkarma();">Çıkar</button>
+    <button   onclick="Çarpma();">Çarp</button>
+    <button  onclick="Bölme();">Böl</button>
+    <br />
+    <br />
+    Sonuc: <div id='sonuc' class='sonuc'> </div>
+</div>
+
+</body>
+</html>
